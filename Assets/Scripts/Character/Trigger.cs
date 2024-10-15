@@ -7,7 +7,7 @@ public class Trigger : MonoBehaviour
 {
    private void OnCollisionEnter2D(Collision2D other)
    {
-      if (other.gameObject.GetComponent<CharacterController>())
+      if (other.gameObject.GetComponent<Player>())
       {
          Debug.Log(other.gameObject.name);
       }
@@ -15,7 +15,7 @@ public class Trigger : MonoBehaviour
 
    private void OnTriggerEnter2D(Collider2D other)
    {
-      if (other.gameObject.GetComponent<CharacterController>())
+      if (other.gameObject.GetComponent<Player>())
       {
          Debug.Log("Enter");
       }
@@ -24,13 +24,13 @@ public class Trigger : MonoBehaviour
 
    private void OnTriggerExit2D(Collider2D other)
    {
-      if (other.gameObject.GetComponent<CharacterController>())
+      if (other.gameObject.GetComponent<Player>())
          Debug.Log("Exit");
    }
 
    private void OnTriggerStay2D(Collider2D other)
    {
-      if (other.gameObject.GetComponent<CharacterController>()) 
+      if (other.gameObject.GetComponent<Player>()) 
          Debug.Log("Stay");
    }
 }

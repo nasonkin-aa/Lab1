@@ -10,8 +10,13 @@ public class Player : MonoBehaviour
 
     public int PlayerSpeed = 3;
     
-    
     public Vector2 Velocity;
+
+    private bool _isGround;
+    public LayerMask PlayerMask;
+    public ContactFilter2D PlayerCF2D;
+
+    public float _radius = 1f;
     
     void Start()
     {
@@ -22,19 +27,35 @@ public class Player : MonoBehaviour
     void Update()
     {
         Velocity.x = Input.GetAxis("Horizontal");
-         Velocity.y = Input.GetAxis("Vertical");
+        Velocity.y = Input.GetAxis("Vertical");
+        
         if (Velocity.magnitude > 1)
             Velocity.Normalize();
 
-        if (Input.GetButtonDown("Jump"))
+        List<Collider2D> result = new List<Collider2D>();
+        RaycastHit2D hit2D = Physics2D.Raycast(transform.position,
+            Vector2.down, 
+            0.6f, 
+            PlayerMask);
+     
+        if (Input.GetButtonDown("Jump") && hit2D.collider != null)
         {
             Debug.Log("1111");
             RB2D.velocity = new Vector2(RB2D.velocity.x, PlayerSpeed);
         }
     }
+    
     public void FixedUpdate()
     {
         RB2D.velocity = new Vector2(Velocity.x * PlayerSpeed, RB2D.velocity.y) ;
     }
-    
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(transform.position, (Vector2)transform.position + Vector2.down *0.6f);
+        /*Gizmos.DrawWireSphere(new Vector2(transform.position.x, 
+                transform.position.y - 0.4f) 
+            , 0.2f );*/
+    }
 }
