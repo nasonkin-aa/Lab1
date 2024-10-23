@@ -23,22 +23,21 @@ public class Player : MonoBehaviour
         PlayerSpeed = 5;
         RB2D = GetComponent<Rigidbody2D>();
     }
+    
+    
 
     void Update()
     {
         Velocity.x = Input.GetAxis("Horizontal");
-        Velocity.y = Input.GetAxis("Vertical");
+        //Velocity.y = Input.GetAxis("Vertical");
         
         if (Velocity.magnitude > 1)
             Velocity.Normalize();
 
         List<Collider2D> result = new List<Collider2D>();
-        RaycastHit2D hit2D = Physics2D.Raycast(transform.position,
-            Vector2.down, 
-            0.6f, 
-            PlayerMask);
+        Physics2D.OverlapCollider(_collider2D, PlayerCF2D, result);
      
-        if (Input.GetButtonDown("Jump") && hit2D.collider != null)
+        if (Input.GetButtonDown("Jump") && result.Count != 0)
         {
             Debug.Log("1111");
             RB2D.velocity = new Vector2(RB2D.velocity.x, PlayerSpeed);
@@ -47,7 +46,8 @@ public class Player : MonoBehaviour
     
     public void FixedUpdate()
     {
-        RB2D.velocity = new Vector2(Velocity.x * PlayerSpeed, RB2D.velocity.y) ;
+        //RB2D.velocity = new Vector2(Velocity.x * PlayerSpeed, RB2D.velocity.y) ;
+        transform.position += new Vector3(Velocity.x * PlayerSpeed *Time.deltaTime,0,0 );
     }
 
     private void OnDrawGizmos()
