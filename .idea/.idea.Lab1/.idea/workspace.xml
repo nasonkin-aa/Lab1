@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02cba730-50a6-47ff-a110-4b87b61f2f82" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Lab1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Characters/gun (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Characters/gun (1).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Characters/pil_down.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Characters/pil_down.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PolatityGun/PolarityController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PolatityGun/PolarityController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\2022.3.47f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\2023.2.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Unity\Projects\Lab1 -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Unity\Projects\Lab1" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -62,7 +63,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="D:\Unity\2022.3.47f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="D:\Unity\2023.2.20f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Unity\Projects\Lab1 -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Unity\Projects\Lab1" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -101,6 +102,7 @@
       <workItem from="1728449402994" duration="10213000" />
       <workItem from="1728543379940" duration="4629000" />
       <workItem from="1729149118328" duration="3898000" />
+      <workItem from="1729676460281" duration="483000" />
     </task>
     <servers />
   </component>

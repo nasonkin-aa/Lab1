@@ -23,8 +23,6 @@ public class Player : MonoBehaviour
         PlayerSpeed = 5;
         RB2D = GetComponent<Rigidbody2D>();
     }
-    
-    
 
     void Update()
     {

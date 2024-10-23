@@ -11,9 +11,6 @@ public class PolarityController : MonoBehaviour
 
     private Polarity.PolarityType playerPolarityType = Polarity.PolarityType.north;
     
-    
-    
-    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F))
