@@ -23,7 +23,6 @@ public class PolarityController : MonoBehaviour
         
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            
             List<Collider2D> result = new List<Collider2D>();
             RaycastHit2D hit2D = Physics2D.Raycast(transform.position,
                  transform.TransformDirection(Vector2.right), 

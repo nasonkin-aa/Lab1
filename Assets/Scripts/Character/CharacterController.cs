@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 
 public class CharacterController : MonoBehaviour
 {
@@ -28,7 +30,6 @@ public class CharacterController : MonoBehaviour
         Velocity.x = Input.GetAxis("Horizontal");
         Velocity.y = Input.GetAxis("Vertical");
         
-        //Debug.Log(Rb2D.velocity.magnitude);
         
         if (Velocity.magnitude > 1)
             Velocity.Normalize();
